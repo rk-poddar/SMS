@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+html{
+  font-size: 62.5%;
+}
+/* CSS */
+.login_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../images/lbg.jpeg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0 15rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 25rem;
+  height: 25rem;
+}
+.logo p {
+  color: white;
+}
+.logo p.stu {
+  font-size: 4.5rem;
+}
+.logo p.manag {
+  font-size: 3rem;
+}
+.logo p.sys {
+  font-size: 4.5rem;
+}
+
+.loginpannel {
+  padding: 3rem;
+  width: 50rem;
+}
+
+.loginpannel h1 {
+  text-align: center;
+  margin: 0 0 4rem;
+}
+.loginpannel h1.welcome {
+  font-size: 4rem;
+  color: blueviolet;
+}
+.loginpannel h1.sign {
+  color: black;
+}
+
+.loginpannel form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-size: 1.7rem;
+  border: .1rem solid gray;
+  border-radius: 5rem;
+  height: 6rem;
+  margin: 1rem 0 0;
+  padding: 0 7rem;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: blueviolet;
+  margin-top: 5rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: rgb(161, 77, 239);
+}
+input::placeholder {
+  color: gray;
+  font-style: italic;
+  letter-spacing: .1rem;
+}
+
+i {
+  font-size: 2.6rem;
+  color: black;
+}
+
+form {
+  position: relative;
+}
+
+.i1 {
+  position: absolute;
+  top: 2.3rem;
+  left: 2.5rem;
+}
+.i2 {
+  position: absolute;
+  top: 11rem;
+  left: 2.5rem;
+}
