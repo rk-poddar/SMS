@@ -1,0 +1,105 @@
+
+body{
+  overflow-x: hidden;
+}
+.wrapper .sidebar {
+  background: #f2f2f2;
+  position: fixed;
+  top: 0;
+  left: -22.5rem;
+  width: 22.5rem;
+  height: 100% ;
+  padding: 2rem 0;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0.2rem 0.4rem 1rem .2rem rgb(0, 0, 0, 0.2);
+}
+
+.wrapper .sidebar .profile {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.wrapper .sidebar .profile img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3 {
+  color: blueviolet;
+  font-size: 2.2rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+}
+
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 1rem 0 1rem 1.8rem;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+}
+
+.wrapper .sidebar ul li a .icon {
+  color: black;
+  padding-right: .8rem;
+  font-size: 2.4rem;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+  color: #fff;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before {
+  display: block;
+}
+
+
+.wrapper .section .top_navbar {
+  z-index: 0;
+  height: 7rem;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 3rem;
+  box-shadow: .2rem .2rem 1rem rgb(0, 0, 0, 0.3);
+}
+.hamburger{
+	border-radius: .5rem;
+	padding: 0.2rem 1rem;
+}
+.wrapper .section .top_navbar .hamburger{
+  font-size: 2.8rem;
+  color: blueviolet;
+  font-weight: bolder;
+  cursor: pointer;
+  position: absolute;
+
+}
+.wrapper .section .top_navbar .hamburger i{
+	font-size: 4rem;
+}
+
+body.active .wrapper .sidebar {
+  left: 0;
+  transition: all 0.5s ease;
+}
+body.active .wrapper .section{
+  transition: all 0.5s ease;
+  width: cal(100% - 22.5rem);
+  margin-left: 22.5rem;
+}
