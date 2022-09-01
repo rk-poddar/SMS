@@ -1,0 +1,77 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(227, 210, 241);
+}
+html {
+  font-size: 62.5%;
+}
+
+.container{
+  max-width: 35rem;
+  margin: 12rem auto;
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .4rem 1rem 1rem rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 7rem;
+  background: blueviolet;
+  border-radius: .5rem .5rem 0 0;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+}
+.wrapper form .row{
+  height: 5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  border-radius: .5rem;
+  border: .1rem solid #777;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: blueviolet;
+}
+form .row input::placeholder{
+  color: #666;
+}
+.wrapper form .button input{
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 0;
+  background: blueviolet;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: rgb(155, 80, 225);
+}
+form .row input[type= "file"]{
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
